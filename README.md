@@ -9,8 +9,8 @@ Template para fácil instanciação de um Codespace com Julia 1.11
 - Clique no botão verde `Create codespace`.
 - O Codespace (online vscode editor) será executado. Agora você pode usar Julia.
 - Após instanciação e carregamento do Codespace experimente executar o seguintes comandos no terminal do VS code online:
-julia --version (para ver a versão do Julia, que deve ser 1.11)
-julia helloWorld.jl (que deve rodar um hello world básico com sucesso e imprimir no console)
+  - julia --version (para ver a versão do Julia, que deve ser 1.11)
+  - julia helloWorld.jl (que deve rodar um hello world básico com sucesso e imprimir no console)
 
 ## Como funciona o Codespaces?
 - Você pode escrever um script de setup do Julia em  [.devcontainer.json](.devcontainer.json)
