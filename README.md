@@ -1,15 +1,18 @@
 # Julia Codespace Template
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/matsui528/julia_codespace_template)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/tesouro/julia_codespace_template)
 
-Template for easy launch of julia in codespace
+Template para fácil instanciação de um Codespace com Julia 1.11
 
-## How to start
-- Click the above `Open in GitHub Codespaces` budge.
-- Click the green `Create codespace` button.
-- The codespace (online vscode editor) is launched. Now you can use julia.
+## Como começar
+- Clique acima no botão `Open in GitHub Codespaces`.
+- Clique no botão verde `Create codespace`.
+- O Codespace (online vscode editor) será executado. Agora você pode usar Julia.
+- Após instanciação e carregamento do Codespace experimente executar o seguintes comandos no terminal do VS code online:
+julia --version (para ver a versão do Julia, que deve ser 1.11)
+julia helloWorld.jl (que deve rodar um hello world básico com sucesso e imprimir no console)
 
-## How it works
-- You can write a setup script for julia at [.devcontainer.json](.devcontainer.json)
-- The codespace uses the script to instantiate the VM.
-- You can obtain the above script by following [the instruction](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-project-for-codespaces). As of 2022, it is just a single simple json file.
+## Como funciona o Codespaces?
+- Você pode escrever um script de setup do Julia em  [.devcontainer.json](.devcontainer.json)
+- O Codespace usa esse script para inicializar uma instancia de VM.
+- Você pode obter um script igual a este aqui: [script](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/setting-up-your-project-for-codespaces).
