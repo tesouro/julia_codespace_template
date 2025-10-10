@@ -1,2 +1,2 @@
 # hello.jl
-println("Hello, World from Julia in GitHub Codespaces!")
+println("Olá, Mundo do Julia no GitHub Codespaces!")
