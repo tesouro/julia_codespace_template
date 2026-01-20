@@ -1,0 +1,22 @@
+Dynare version: 0.9.18
+2026-01-16T20:17:22.373: Starting @dynare RBC_fiscal_anunciado.mod
+["RBC_fiscal_anunciado.mod", "language=julia", "json=compute"]
+Dynare preprocessor version: 6.4.0+0
+2026-01-16T20:17:22.389: End of preprocessing
+2026-01-16T20:17:22.432: Start parse_statements!
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:44
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+2026-01-16T20:17:23.903: End parse_statements!
+2026-01-16T20:17:23.904: End parser
+The number of labels is different than the number of variables to be plotted

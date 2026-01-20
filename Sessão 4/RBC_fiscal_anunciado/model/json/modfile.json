@@ -1,0 +1,229 @@
+{
+"endogenous": [{"name":"c", "texName":"c", "longName":"Consumo privado"}
+, {"name":"rk", "texName":"rk", "longName":"Retorno do capital"}
+, {"name":"n", "texName":"n", "longName":"Trabalho"}
+, {"name":"k", "texName":"k", "longName":"Capital privado"}
+, {"name":"x", "texName":"x", "longName":"Investimento privado"}
+, {"name":"y", "texName":"y", "longName":"Produto"}
+, {"name":"w", "texName":"w", "longName":"Taxa de salário"}
+, {"name":"rb", "texName":"rb", "longName":"Taxa de retorno dos ativos financeiros"}
+, {"name":"A", "texName":"A", "longName":"Produtividade Total dos Fatores"}
+, {"name":"b", "texName":"b", "longName":"Dívida bruta do governo"}
+, {"name":"R", "texName":"R", "longName":"Receita fiscal"}
+, {"name":"tauc", "texName":"tauc", "longName":"Taxa de imposto sobre consumo"}
+, {"name":"tauw", "texName":"tauw", "longName":"Taxa de imposto sobre salário"}
+, {"name":"tauk", "texName":"tauk", "longName":"Taxa de imposto sobre a renda do capital"}
+, {"name":"tauo", "texName":"tauo", "longName":"Imposto Lump-Sum"}
+, {"name":"g", "texName":"g", "longName":"Gasto primário"}
+, {"name":"cg", "texName":"cg", "longName":"Consumo público corrente"}
+, {"name":"xg", "texName":"xg", "longName":"Investimento público"}
+, {"name":"kg", "texName":"kg", "longName":"Capital público"}
+, {"name":"pb", "texName":"pb", "longName":"Resultado primário"}
+, {"name":"b_gdp", "texName":"b\\_gdp", "longName":"Dívida como proporção do PIB"}
+, {"name":"g_gdp", "texName":"g\\_gdp", "longName":"Gasto primário como proporção do PIB"}
+, {"name":"R_gdp", "texName":"R\\_gdp", "longName":"Receita fiscal como proporção do PIB"}
+, {"name":"pb_gdp", "texName":"pb\\_gdp", "longName":"Resultado primário como proporção do PIB"}
+, {"name":"AUX_EXO_LAG_28_0", "texName":"AUX\\_EXO\\_LAG\\_28\\_0", "longName":"AUX_EXO_LAG_28_0"}
+, {"name":"AUX_EXO_LAG_28_1", "texName":"AUX\\_EXO\\_LAG\\_28\\_1", "longName":"AUX_EXO_LAG_28_1"}
+, {"name":"AUX_EXO_LAG_28_2", "texName":"AUX\\_EXO\\_LAG\\_28\\_2", "longName":"AUX_EXO_LAG_28_2"}
+]
+, "exogenous":[{"name":"e_A", "texName":"e\\_A", "longName":"Choque de PTF"}
+, {"name":"e_cg", "texName":"e\\_cg", "longName":"Choque no Consumo do Governo"}
+, {"name":"e_xg", "texName":"e\\_xg", "longName":"Choque de investimento público"}
+, {"name":"e_tauc", "texName":"e\\_tauc", "longName":"Choque de imposto sobre consumo"}
+, {"name":"e_tauw", "texName":"e\\_tauw", "longName":"Choque de imposto sobre salário"}
+, {"name":"e_tauk", "texName":"e\\_tauk", "longName":"Choque de imposto sobre a renda do capital"}
+]
+, "exogenous_deterministic": []
+, "parameters": [{"name":"beta", "texName":"beta", "longName":"beta"}
+, {"name":"alpha", "texName":"alpha", "longName":"alpha"}
+, {"name":"delta", "texName":"delta", "longName":"delta"}
+, {"name":"theta", "texName":"theta", "longName":"theta"}
+, {"name":"rho_A", "texName":"rho\\_A", "longName":"rho_A"}
+, {"name":"rho_cg", "texName":"rho\\_cg", "longName":"rho_cg"}
+, {"name":"rho_xg", "texName":"rho\\_xg", "longName":"rho_xg"}
+, {"name":"A_ss", "texName":"A\\_ss", "longName":"A_ss"}
+, {"name":"tauc_ss", "texName":"tauc\\_ss", "longName":"tauc_ss"}
+, {"name":"tauw_ss", "texName":"tauw\\_ss", "longName":"tauw_ss"}
+, {"name":"tauk_ss", "texName":"tauk\\_ss", "longName":"tauk_ss"}
+, {"name":"tauo_ss", "texName":"tauo\\_ss", "longName":"tauo_ss"}
+, {"name":"rho_c", "texName":"rho\\_c", "longName":"rho_c"}
+, {"name":"rho_w", "texName":"rho\\_w", "longName":"rho_w"}
+, {"name":"rho_k", "texName":"rho\\_k", "longName":"rho_k"}
+, {"name":"rho_to", "texName":"rho\\_to", "longName":"rho_to"}
+, {"name":"tauob", "texName":"tauob", "longName":"tauob"}
+, {"name":"psi", "texName":"psi", "longName":"psi"}
+, {"name":"alpha1", "texName":"alpha1", "longName":"alpha1"}
+, {"name":"deltag", "texName":"deltag", "longName":"deltag"}
+, {"name":"xg_ss", "texName":"xg\\_ss", "longName":"xg_ss"}
+, {"name":"kg_ss", "texName":"kg\\_ss", "longName":"kg_ss"}
+, {"name":"c_ss", "texName":"c\\_ss", "longName":"c_ss"}
+, {"name":"n_ss", "texName":"n\\_ss", "longName":"n_ss"}
+, {"name":"k_ss", "texName":"k\\_ss", "longName":"k_ss"}
+, {"name":"x_ss", "texName":"x\\_ss", "longName":"x_ss"}
+, {"name":"y_ss", "texName":"y\\_ss", "longName":"y_ss"}
+, {"name":"b_ss", "texName":"b\\_ss", "longName":"b_ss"}
+, {"name":"cg_ss", "texName":"cg\\_ss", "longName":"cg_ss"}
+, {"name":"rk_ss", "texName":"rk\\_ss", "longName":"rk_ss"}
+, {"name":"rb_ss", "texName":"rb\\_ss", "longName":"rb_ss"}
+, {"name":"w_ss", "texName":"w\\_ss", "longName":"w_ss"}
+, {"name":"b_gdp_ss", "texName":"b\\_gdp\\_ss", "longName":"b_gdp_ss"}
+, {"name":"g_gdp_ss", "texName":"g\\_gdp\\_ss", "longName":"g_gdp_ss"}
+, {"name":"R_gdp_ss", "texName":"R\\_gdp\\_ss", "longName":"R_gdp_ss"}
+, {"name":"pb_gdp_ss", "texName":"pb\\_gdp\\_ss", "longName":"pb_gdp_ss"}
+]
+, "orig_endo_nbr": 24
+, "aux_vars": [
+{"endo_index": 25, "type": 3, "orig_index": 5, "orig_lead_lag": 0, "orig_expr": "e_tauw"}
+, {"endo_index": 26, "type": 3, "orig_index": 5, "orig_lead_lag": -1, "orig_expr": "AUX_EXO_LAG_28_0(-1)"}
+, {"endo_index": 27, "type": 3, "orig_index": 5, "orig_lead_lag": -2, "orig_expr": "AUX_EXO_LAG_28_1(-1)"}
+]
+, "model_local_variables": [], 
+"model":[
+{"lhs": "(c+psi*cg)^(-1)", "rhs": "beta*(c(1)+psi*cg(1))^(-1)*(1+tauc)/(1+tauc(1))*(1+(1-tauk(1))*rk(1)-delta)", "line": 117, "tags": {"name": "Equação de Euler"}}
+, {"lhs": "n", "rhs": "1-(c+psi*cg)*(1+tauc)*(1-theta)/theta/(1-tauw)/w", "line": 120, "tags": {"name": "Oferta de trabalho"}}
+, {"lhs": "(c+psi*cg)^(-1)", "rhs": "beta*(c(1)+psi*cg(1))^(-1)*(1+tauc)/(1+tauc(1))*(1+rb)", "line": 123, "tags": {"name": "Condição de precificação dos ativos financeiros"}}
+, {"lhs": "y", "rhs": "A*k(-1)^alpha*n^(1-alpha)*kg^alpha1", "line": 126, "tags": {"name": "Função de produção"}}
+, {"lhs": "rk", "rhs": "y*alpha/k(-1)", "line": 129, "tags": {"name": "Retorno do capital"}}
+, {"lhs": "w", "rhs": "y*(1-alpha)/n", "line": 132, "tags": {"name": "Produtividade marginal do trabalho"}}
+, {"lhs": "x", "rhs": "k-k(-1)*(1-delta)", "line": 135, "tags": {"name": "Lei de movimento do capital"}}
+, {"lhs": "log(A)", "rhs": "rho_A*log(A(-1))+(1-rho_A)*log(A_ss)+e_A", "line": 138, "tags": {"name": "Produtividade total dos fatores"}}
+, {"lhs": "y", "rhs": "cg+c+x+xg", "line": 141, "tags": {"name": "Demanda agregada"}}
+, {"lhs": "b", "rhs": "(1+rb(-1))*b(-1)+g-R", "line": 144, "tags": {"name": "Dinâmica da dívida bruta"}}
+, {"lhs": "g", "rhs": "cg+xg", "line": 147, "tags": {"name": "Gasto primário"}}
+, {"lhs": "log(cg)", "rhs": "rho_cg*log(cg(-1))+(1-rho_cg)*log(cg_ss)+e_cg", "line": 150, "tags": {"name": "Gasto corrente"}}
+, {"lhs": "log(xg)", "rhs": "rho_xg*log(xg(-1))+(1-rho_xg)*log(xg_ss)+e_xg", "line": 153, "tags": {"name": "Gasto de capital"}}
+, {"lhs": "kg", "rhs": "xg+(1-deltag)*kg(-1)", "line": 156, "tags": {"name": "Lei de movimento do capital público"}}
+, {"lhs": "R", "rhs": "c*tauc+n*tauw*w+k(-1)*rk*tauk+tauo", "line": 159, "tags": {"name": "Receita fiscal"}}
+, {"lhs": "tauc", "rhs": "rho_c*tauc(-1)+(1-rho_c)*tauc_ss+e_tauc", "line": 162, "tags": {"name": "Taxa de impostos sobre consumo"}}
+, {"lhs": "tauw", "rhs": "rho_w*tauw(-1)+(1-rho_w)*tauw_ss+AUX_EXO_LAG_28_2(-1)", "line": 165, "tags": {"name": "Taxa de impostos sobre salário"}}
+, {"lhs": "tauk", "rhs": "rho_k*tauk(-1)+(1-rho_k)*tauk_ss+e_tauk", "line": 168, "tags": {"name": "Taxa de impostos sobre a renda do capital"}}
+, {"lhs": "tauo", "rhs": "rho_to*tauo(-1)+(1-rho_to)*tauo_ss+tauob*(b_gdp-b_gdp_ss)", "line": 171, "tags": {"name": "Outras taxas de impostos"}}
+, {"lhs": "pb", "rhs": "R-g", "line": 174, "tags": {"name": "Resultado primário"}}
+, {"lhs": "b_gdp", "rhs": "b/y", "line": 177, "tags": {"name": "Dívida como proporção do PIB"}}
+, {"lhs": "g_gdp", "rhs": "g/y", "line": 180, "tags": {"name": "Gasto primário como proporção do PIB"}}
+, {"lhs": "R_gdp", "rhs": "R/y", "line": 183, "tags": {"name": "Receita fiscal como proporção do PIB"}}
+, {"lhs": "pb_gdp", "rhs": "pb/y", "line": 186, "tags": {"name": "Resultado primário como proporção do PIB"}}
+, {"lhs": "AUX_EXO_LAG_28_0", "rhs": "e_tauw"}
+, {"lhs": "AUX_EXO_LAG_28_1", "rhs": "AUX_EXO_LAG_28_0(-1)"}
+, {"lhs": "AUX_EXO_LAG_28_2", "rhs": "AUX_EXO_LAG_28_1(-1)"}
+
+]
+, "xrefs": {"parameters": [], "endogenous": [], "exogenous": [], "exogenous_deterministic": []}
+, "abstract_syntax_tree":[
+{ "number":0, "line":117, "tags": {"name": "Equação de Euler"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "psi", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 0}}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "uminus", "arg" : {"node_type" : "NumConstNode", "value" : 1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "beta", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "psi", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 1}}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "uminus", "arg" : {"node_type" : "NumConstNode", "value" : 1}}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 0}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauk", "type" : "endogenous", "lag" : 1}}, "arg2" : {"node_type" : "VariableNode", "name" : "rk", "type" : "endogenous", "lag" : 1}}}, "arg2" : {"node_type" : "VariableNode", "name" : "delta", "type" : "parameter", "lag" : 0}}}}}, { "number":1, "line":120, "tags": {"name": "Oferta de trabalho"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "n", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "psi", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 0}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "theta", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "theta", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauw", "type" : "endogenous", "lag" : 0}}}}, "arg2" : {"node_type" : "VariableNode", "name" : "w", "type" : "endogenous", "lag" : 0}}}}}, { "number":2, "line":123, "tags": {"name": "Condição de precificação dos ativos financeiros"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "psi", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 0}}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "uminus", "arg" : {"node_type" : "NumConstNode", "value" : 1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "beta", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "psi", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 1}}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "uminus", "arg" : {"node_type" : "NumConstNode", "value" : 1}}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 0}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rb", "type" : "endogenous", "lag" : 0}}}}}, { "number":3, "line":126, "tags": {"name": "Função de produção"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "A", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "VariableNode", "name" : "k", "type" : "endogenous", "lag" : -1}, "arg2" : {"node_type" : "VariableNode", "name" : "alpha", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "VariableNode", "name" : "n", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "alpha", "type" : "parameter", "lag" : 0}}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "^", "arg1" : {"node_type" : "VariableNode", "name" : "kg", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "alpha1", "type" : "parameter", "lag" : 0}}}}}, { "number":4, "line":129, "tags": {"name": "Retorno do capital"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "rk", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "alpha", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "k", "type" : "endogenous", "lag" : -1}}}}, { "number":5, "line":132, "tags": {"name": "Produtividade marginal do trabalho"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "w", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "alpha", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "n", "type" : "endogenous", "lag" : 0}}}}, { "number":6, "line":135, "tags": {"name": "Lei de movimento do capital"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "x", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "k", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "k", "type" : "endogenous", "lag" : -1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "delta", "type" : "parameter", "lag" : 0}}}}}}, { "number":7, "line":138, "tags": {"name": "Produtividade total dos fatores"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "A", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_A", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "A", "type" : "endogenous", "lag" : -1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_A", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "A_ss", "type" : "parameter", "lag" : 0}}}}, "arg2" : {"node_type" : "VariableNode", "name" : "e_A", "type" : "exogenous", "lag" : 0}}}}, { "number":8, "line":141, "tags": {"name": "Demanda agregada"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "x", "type" : "endogenous", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "xg", "type" : "endogenous", "lag" : 0}}}}, { "number":9, "line":144, "tags": {"name": "Dinâmica da dívida bruta"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "b", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rb", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "VariableNode", "name" : "b", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "VariableNode", "name" : "g", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "R", "type" : "endogenous", "lag" : 0}}}}, { "number":10, "line":147, "tags": {"name": "Gasto primário"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "g", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "xg", "type" : "endogenous", "lag" : 0}}}}, { "number":11, "line":150, "tags": {"name": "Gasto corrente"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_cg", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "cg", "type" : "endogenous", "lag" : -1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_cg", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "cg_ss", "type" : "parameter", "lag" : 0}}}}, "arg2" : {"node_type" : "VariableNode", "name" : "e_cg", "type" : "exogenous", "lag" : 0}}}}, { "number":12, "line":153, "tags": {"name": "Gasto de capital"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "xg", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_xg", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "xg", "type" : "endogenous", "lag" : -1}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_xg", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "UnaryOpNode", "op" : "log", "arg" : {"node_type" : "VariableNode", "name" : "xg_ss", "type" : "parameter", "lag" : 0}}}}, "arg2" : {"node_type" : "VariableNode", "name" : "e_xg", "type" : "exogenous", "lag" : 0}}}}, { "number":13, "line":156, "tags": {"name": "Lei de movimento do capital público"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "kg", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "xg", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "deltag", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "kg", "type" : "endogenous", "lag" : -1}}}}}, { "number":14, "line":159, "tags": {"name": "Receita fiscal"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "R", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "n", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "tauw", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "w", "type" : "endogenous", "lag" : 0}}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "k", "type" : "endogenous", "lag" : -1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rk", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "tauk", "type" : "endogenous", "lag" : 0}}}}, "arg2" : {"node_type" : "VariableNode", "name" : "tauo", "type" : "endogenous", "lag" : 0}}}}, { "number":15, "line":162, "tags": {"name": "Taxa de impostos sobre consumo"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_c", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_c", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "tauc_ss", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "e_tauc", "type" : "exogenous", "lag" : 0}}}}, { "number":16, "line":165, "tags": {"name": "Taxa de impostos sobre salário"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "tauw", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_w", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "tauw", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_w", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "tauw_ss", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "AUX_EXO_LAG_28_2", "type" : "endogenous", "lag" : -1}}}}, { "number":17, "line":168, "tags": {"name": "Taxa de impostos sobre a renda do capital"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "tauk", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_k", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "tauk", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_k", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "tauk_ss", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "e_tauk", "type" : "exogenous", "lag" : 0}}}}, { "number":18, "line":171, "tags": {"name": "Outras taxas de impostos"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "tauo", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_to", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "tauo", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_to", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "tauo_ss", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "tauob", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "b_gdp", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "b_gdp_ss", "type" : "parameter", "lag" : 0}}}}}}, { "number":19, "line":174, "tags": {"name": "Resultado primário"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "pb", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "R", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "g", "type" : "endogenous", "lag" : 0}}}}, { "number":20, "line":177, "tags": {"name": "Dívida como proporção do PIB"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "b_gdp", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "VariableNode", "name" : "b", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}}}}, { "number":21, "line":180, "tags": {"name": "Gasto primário como proporção do PIB"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "g_gdp", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "VariableNode", "name" : "g", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}}}}, { "number":22, "line":183, "tags": {"name": "Receita fiscal como proporção do PIB"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "R_gdp", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "VariableNode", "name" : "R", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}}}}, { "number":23, "line":186, "tags": {"name": "Resultado primário como proporção do PIB"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "pb_gdp", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "VariableNode", "name" : "pb", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}}}}, { "number":24, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "AUX_EXO_LAG_28_0", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "e_tauw", "type" : "exogenous", "lag" : 0}}}, { "number":25, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "AUX_EXO_LAG_28_1", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "AUX_EXO_LAG_28_0", "type" : "endogenous", "lag" : -1}}}, { "number":26, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "AUX_EXO_LAG_28_2", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "AUX_EXO_LAG_28_1", "type" : "endogenous", "lag" : -1}}}], "variable_mapping":[
+{"name": "c", "equations":["Equação de Euler", "Oferta de trabalho", "Condição de precificação dos ativos financeiros", "Demanda agregada", "Receita fiscal"]}
+, {"name": "rk", "equations":["Equação de Euler", "Retorno do capital", "Receita fiscal"]}
+, {"name": "n", "equations":["Oferta de trabalho", "Função de produção", "Produtividade marginal do trabalho", "Receita fiscal"]}
+, {"name": "k", "equations":["Função de produção", "Retorno do capital", "Lei de movimento do capital", "Receita fiscal"]}
+, {"name": "x", "equations":["Lei de movimento do capital", "Demanda agregada"]}
+, {"name": "y", "equations":["Função de produção", "Retorno do capital", "Produtividade marginal do trabalho", "Demanda agregada", "Dívida como proporção do PIB", "Gasto primário como proporção do PIB", "Receita fiscal como proporção do PIB", "Resultado primário como proporção do PIB"]}
+, {"name": "w", "equations":["Oferta de trabalho", "Produtividade marginal do trabalho", "Receita fiscal"]}
+, {"name": "rb", "equations":["Condição de precificação dos ativos financeiros", "Dinâmica da dívida bruta"]}
+, {"name": "A", "equations":["Função de produção", "Produtividade total dos fatores"]}
+, {"name": "b", "equations":["Dinâmica da dívida bruta", "Dívida como proporção do PIB"]}
+, {"name": "R", "equations":["Dinâmica da dívida bruta", "Receita fiscal", "Resultado primário", "Receita fiscal como proporção do PIB"]}
+, {"name": "tauc", "equations":["Equação de Euler", "Oferta de trabalho", "Condição de precificação dos ativos financeiros", "Receita fiscal", "Taxa de impostos sobre consumo"]}
+, {"name": "tauw", "equations":["Oferta de trabalho", "Receita fiscal", "Taxa de impostos sobre salário"]}
+, {"name": "tauk", "equations":["Equação de Euler", "Receita fiscal", "Taxa de impostos sobre a renda do capital"]}
+, {"name": "tauo", "equations":["Receita fiscal", "Outras taxas de impostos"]}
+, {"name": "g", "equations":["Dinâmica da dívida bruta", "Gasto primário", "Resultado primário", "Gasto primário como proporção do PIB"]}
+, {"name": "cg", "equations":["Equação de Euler", "Oferta de trabalho", "Condição de precificação dos ativos financeiros", "Demanda agregada", "Gasto primário", "Gasto corrente"]}
+, {"name": "xg", "equations":["Demanda agregada", "Gasto primário", "Gasto de capital", "Lei de movimento do capital público"]}
+, {"name": "kg", "equations":["Função de produção", "Lei de movimento do capital público"]}
+, {"name": "pb", "equations":["Resultado primário", "Resultado primário como proporção do PIB"]}
+, {"name": "b_gdp", "equations":["Outras taxas de impostos", "Dívida como proporção do PIB"]}
+, {"name": "g_gdp", "equations":["Gasto primário como proporção do PIB"]}
+, {"name": "R_gdp", "equations":["Receita fiscal como proporção do PIB"]}
+, {"name": "pb_gdp", "equations":["Resultado primário como proporção do PIB"]}
+, {"name": "e_A", "equations":["Produtividade total dos fatores"]}
+, {"name": "e_cg", "equations":["Gasto corrente"]}
+, {"name": "e_xg", "equations":["Gasto de capital"]}
+, {"name": "e_tauc", "equations":["Taxa de impostos sobre consumo"]}
+, {"name": "e_tauw", "equations":["Taxa de impostos sobre salário"]}
+, {"name": "e_tauk", "equations":["Taxa de impostos sobre a renda do capital"]}
+], "dynamic_tmp_nbr": [8, 3, 0, 0], "dynamic_g1_sparse_rowval": [4, 5, 7, 15, 10, 8, 10, 16, 17, 18, 19, 12, 13, 14, 26, 27, 17, 1, 2, 3, 9, 15, 5, 15, 2, 4, 6, 15, 7, 7, 9, 4, 5, 6, 9, 21, 22, 23, 24, 2, 6, 15, 3, 4, 8, 10, 21, 10, 15, 20, 23, 1, 2, 3, 15, 16, 2, 15, 17, 15, 18, 15, 19, 10, 11, 20, 22, 1, 2, 3, 9, 11, 12, 9, 11, 13, 14, 4, 14, 20, 24, 19, 21, 22, 23, 24, 25, 26, 27, 1, 3, 1, 1, 3, 1, 1, 3, 8, 12, 13, 16, 25, 18], 
+"dynamic_g1_sparse_colval": [4, 4, 4, 4, 8, 9, 10, 12, 13, 14, 15, 17, 18, 19, 25, 26, 27, 28, 28, 28, 28, 28, 29, 29, 30, 30, 30, 30, 31, 32, 32, 33, 33, 33, 33, 33, 33, 33, 33, 34, 34, 34, 35, 36, 36, 37, 37, 38, 38, 38, 38, 39, 39, 39, 39, 39, 40, 40, 40, 41, 41, 42, 42, 43, 43, 43, 43, 44, 44, 44, 44, 44, 44, 45, 45, 45, 45, 46, 46, 47, 47, 48, 48, 49, 50, 51, 52, 53, 54, 55, 55, 56, 66, 66, 68, 71, 71, 82, 83, 84, 85, 86, 87], 
+"dynamic_g1_sparse_colptr": [1, 1, 1, 1, 5, 5, 5, 5, 6, 7, 8, 8, 9, 10, 11, 12, 12, 13, 14, 15, 15, 15, 15, 15, 15, 16, 17, 18, 23, 25, 29, 30, 32, 40, 43, 44, 46, 48, 52, 57, 60, 62, 64, 68, 74, 78, 80, 82, 84, 85, 86, 87, 88, 89, 90, 92, 93, 93, 93, 93, 93, 93, 93, 93, 93, 93, 95, 95, 96, 96, 96, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 99, 100, 101, 102, 103, 104]
+, "static_tmp_nbr": [6, 2, 0, 0], "static_g1_sparse_rowval": [1, 2, 3, 9, 15, 1, 5, 15, 2, 4, 6, 15, 4, 5, 7, 15, 7, 9, 4, 5, 6, 9, 21, 22, 23, 24, 2, 6, 15, 3, 10, 4, 8, 10, 21, 10, 15, 20, 23, 2, 15, 16, 2, 15, 17, 1, 15, 18, 15, 19, 10, 11, 20, 22, 1, 2, 3, 9, 11, 12, 9, 11, 13, 14, 4, 14, 20, 24, 19, 21, 22, 23, 24, 25, 26, 26, 27, 17, 27], 
+"static_g1_sparse_colval": [1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 11, 11, 12, 12, 12, 13, 13, 13, 14, 14, 14, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 19, 19, 20, 20, 21, 21, 22, 23, 24, 25, 25, 26, 26, 27, 27], 
+"static_g1_sparse_colptr": [1, 6, 9, 13, 17, 19, 27, 30, 32, 34, 36, 40, 43, 46, 49, 51, 55, 61, 65, 67, 69, 71, 72, 73, 74, 76, 78, 80]
+, "statements": [{"statementName": "param_init", "name": "beta", "value": "0.9529"}, 
+{"statementName": "param_init", "name": "alpha", "value": "0.448"}, 
+{"statementName": "param_init", "name": "delta", "value": "0.0963"}, 
+{"statementName": "param_init", "name": "psi", "value": "0"}, 
+{"statementName": "param_init", "name": "theta", "value": "0.5"}, 
+{"statementName": "param_init", "name": "alpha1", "value": "0.1"}, 
+{"statementName": "param_init", "name": "deltag", "value": "delta"}, 
+{"statementName": "param_init", "name": "rho_A", "value": "0.69"}, 
+{"statementName": "param_init", "name": "rho_c", "value": "0.41"}, 
+{"statementName": "param_init", "name": "rho_w", "value": "0.41"}, 
+{"statementName": "param_init", "name": "rho_k", "value": "0.41"}, 
+{"statementName": "param_init", "name": "rho_to", "value": "0.41"}, 
+{"statementName": "param_init", "name": "rho_cg", "value": "0.47"}, 
+{"statementName": "param_init", "name": "rho_xg", "value": "0.47"}, 
+{"statementName": "param_init", "name": "tauob", "value": "0.036"}, 
+{"statementName": "param_init", "name": "A_ss", "value": "1"}, 
+{"statementName": "param_init", "name": "tauc_ss", "value": "0.162"}, 
+{"statementName": "param_init", "name": "tauw_ss", "value": "0.15"}, 
+{"statementName": "param_init", "name": "tauk_ss", "value": "0.15"}, 
+{"statementName": "native", "string": "cg_y      = 0.3891; "}, 
+{"statementName": "native", "string": "xg_y      = 0.0004; "}, 
+{"statementName": "native", "string": "b_y       = 0.8637; "}, 
+{"statementName": "native", "string": "x_y       = 0.1642; "}, 
+{"statementName": "native", "string": "k_y       = (beta / (1 - beta)) * ((1 - tauk_ss)*alpha - x_y);"}, 
+{"statementName": "native", "string": "c_y       = 1 - x_y - cg_y - xg_y;"}, 
+{"statementName": "param_init", "name": "delta", "value": "x_y/k_y"}, 
+{"statementName": "param_init", "name": "deltag", "value": "delta"}, 
+{"statementName": "param_init", "name": "n_ss", "value": "(1+(1-theta)/(theta*(1-alpha))*(1+tauc_ss)/(1-tauw_ss)*(c_y+psi*cg_y))^(-1)"}, 
+{"statementName": "param_init", "name": "k_ss", "value": "((alpha*beta*(1-tauk_ss)*A_ss/(1-beta*(1-delta)))^(1-alpha1)*(A_ss*xg_y/deltag)^alpha1*n_ss^(1-alpha))^(1/(1-alpha-alpha1))"}, 
+{"statementName": "param_init", "name": "kg_ss", "value": "(n_ss^(1-alpha)*A_ss*xg_y/deltag*k_ss^alpha)^(1/(1-alpha1))"}, 
+{"statementName": "param_init", "name": "y_ss", "value": "n_ss^(1-alpha)*A_ss*k_ss^alpha*kg_ss^alpha1"}, 
+{"statementName": "param_init", "name": "w_ss", "value": "(1-alpha)*y_ss/n_ss"}, 
+{"statementName": "param_init", "name": "rk_ss", "value": "alpha*y_ss/k_ss"}, 
+{"statementName": "param_init", "name": "rb_ss", "value": "1/beta-1"}, 
+{"statementName": "param_init", "name": "x_ss", "value": "delta*k_ss"}, 
+{"statementName": "param_init", "name": "cg_ss", "value": "cg_y*y_ss"}, 
+{"statementName": "param_init", "name": "xg_ss", "value": "xg_y*y_ss"}, 
+{"statementName": "param_init", "name": "c_ss", "value": "y_ss-x_ss-cg_ss-xg_ss"}, 
+{"statementName": "native", "string": "g_ss      = cg_ss + xg_ss;"}, 
+{"statementName": "param_init", "name": "b_ss", "value": "y_ss*b_y"}, 
+{"statementName": "native", "string": "pb_ss     = rb_ss * b_ss;"}, 
+{"statementName": "native", "string": "R_ss      = pb_ss + g_ss;"}, 
+{"statementName": "param_init", "name": "tauo_ss", "value": "R_ss-tauc_ss*c_ss-n_ss*tauw_ss*w_ss-k_ss*tauk_ss*rk_ss"}, 
+{"statementName": "param_init", "name": "b_gdp_ss", "value": "b_ss/y_ss"}, 
+{"statementName": "param_init", "name": "g_gdp_ss", "value": "g_ss/y_ss"}, 
+{"statementName": "param_init", "name": "R_gdp_ss", "value": "R_ss/y_ss"}, 
+{"statementName": "param_init", "name": "pb_gdp_ss", "value": "pb_ss/y_ss"}, 
+{"statementName": "initval", "vals": [{"name": "c", "value": "c_ss"}, {"name": "rk", "value": "rk_ss"}, {"name": "n", "value": "n_ss"}, {"name": "k", "value": "k_ss"}, {"name": "x", "value": "x_ss"}, {"name": "y", "value": "y_ss"}, {"name": "w", "value": "w_ss"}, {"name": "rb", "value": "rb_ss"}, {"name": "A", "value": "A_ss"}, {"name": "b", "value": "b_ss"}, {"name": "R", "value": "R_ss"}, {"name": "tauc", "value": "tauc_ss"}, {"name": "tauw", "value": "tauw_ss"}, {"name": "tauk", "value": "tauk_ss"}, {"name": "tauo", "value": "tauo_ss"}, {"name": "g", "value": "g_ss"}, {"name": "cg", "value": "cg_ss"}, {"name": "xg", "value": "xg_ss"}, {"name": "kg", "value": "kg_ss"}, {"name": "pb", "value": "pb_ss"}, {"name": "b_gdp", "value": "b_gdp_ss"}, {"name": "g_gdp", "value": "g_gdp_ss"}, {"name": "R_gdp", "value": "R_gdp_ss"}, {"name": "pb_gdp", "value": "pb_gdp_ss"}]}, 
+{"statementName": "steady"}, 
+{"statementName": "check"}, 
+{"statementName": "shocks", "overwrite": false, "variance": [], "stderr": [{"name": "e_A", "stderr": "0.01"}, {"name": "e_cg", "stderr": "0.01"}, {"name": "e_xg", "stderr": "0.01"}, {"name": "e_tauc", "stderr": "0.01"}, {"name": "e_tauw", "stderr": "0.01"}, {"name": "e_tauk", "stderr": "0.01"}], "covariance": [], "correlation": []}, 
+{"statementName": "stoch_simul", "options": {"irf": 50, "order": 1}}]
+,"model_info": {"lead_lag_incidence": [[ 0, 15, 42],[ 0, 16, 43],[ 0, 17, 0],[ 1, 18, 0],[ 0, 19, 0],[ 0, 20, 0],[ 0, 21, 0],[ 2, 22, 0],[ 3, 23, 0],[ 4, 24, 0],[ 0, 25, 0],[ 5, 26, 44],[ 6, 27, 0],[ 7, 28, 45],[ 8, 29, 0],[ 0, 30, 0],[ 9, 31, 46],[ 10, 32, 0],[ 11, 33, 0],[ 0, 34, 0],[ 0, 35, 0],[ 0, 36, 0],[ 0, 37, 0],[ 0, 38, 0],[ 12, 39, 0],[ 13, 40, 0],[ 14, 41, 0]], "nstatic": 11, 
+"nfwrd": 2, 
+"npred": 11, 
+"nboth": 3, 
+"nsfwrd": 5, 
+"nspred": 14, 
+"ndynamic": 16, 
+"maximum_endo_lag": 1, 
+"maximum_endo_lead": 1, 
+"maximum_exo_lag": 0, 
+"maximum_exo_lead": 0, 
+"maximum_exo_det_lag": 0, 
+"maximum_exo_det_lead": 0, 
+"maximum_lag": 1, 
+"maximum_lead": 1, 
+"orig_maximum_endo_lag": 1,
+"orig_maximum_endo_lead": 1,
+"orig_maximum_exo_lag": 3,
+"orig_maximum_exo_lead": 0,
+"orig_maximum_exo_det_lag": 0,
+"orig_maximum_exo_det_lead": 0,
+"orig_maximum_lag": 3,
+"orig_maximum_lead": 1,
+"orig_maximum_lag_with_diffs_expanded": 3,
+"NNZDerivatives": [103, -1, -1]}
+, "steady_state_model": false
+}

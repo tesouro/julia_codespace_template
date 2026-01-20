@@ -1,0 +1,23 @@
+Dynare version: 0.9.18
+2026-01-16T20:16:44.253: Starting @dynare RBC_fiscal_psi_negativo.mod
+["RBC_fiscal_psi_negativo.mod", "language=julia", "json=compute"]
+Dynare preprocessor version: 6.4.0+0
+2026-01-16T20:16:44.268: End of preprocessing
+2026-01-16T20:16:44.304: Start parse_statements!
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:44
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+2026-01-16T20:16:45.552: End parse_statements!
+2026-01-16T20:16:45.552: End parser
+The number of labels is different than the number of variables to be plotted
+The number of labels is different than the number of variables to be plotted

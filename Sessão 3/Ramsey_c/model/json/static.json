@@ -1,0 +1,34 @@
+{"static_model": {"model_local_variables": [], "external_functions_temporary_terms_": [], "temporary_terms_": [{"temporary_term": "T15", "value": "k^alpha"}
+, {"temporary_term": "T21", "value": "k^(alpha-1)"}
+], 
+"residuals":[
+{"residual": {"lhs": "w", "rhs": "(1-alpha)*A*k^alpha"}}
+, {"residual": {"lhs": "r", "rhs": "alpha*A*k^(alpha-1)-delta"}}
+, {"residual": {"lhs": "1", "rhs": "1-delta+A*k^(alpha-1)-c/k"}}
+, {"residual": {"lhs": "1", "rhs": "(beta*(1+alpha*A*k^(alpha-1)-delta))^(1/sigma)"}}
+, {"residual": {"lhs": "y", "rhs": "A*k^alpha"}}
+, {"residual": {"lhs": "log(A)", "rhs": "log(A)*rho+(1-rho)*log(A_ss)+e_A"}}
+, {"residual": {"lhs": "log(beta)", "rhs": "log(beta)*rho_beta+(1-rho_beta)*log(beta_ss)+e_beta"}}
+
+]
+, "external_functions_temporary_terms_jacobian": [], "temporary_terms_jacobian": [{"temporary_term": "T68", "value": "get_power_deriv(k,alpha,1)"}
+, {"temporary_term": "T71", "value": "get_power_deriv(k,alpha-1,1)"}
+, {"temporary_term": "T81", "value": "get_power_deriv(beta*(1+alpha*A*T21-delta),1/sigma,1)"}
+], "jacobian": {  "nrows": 7, "ncols": 7, "entries": [{"eq": 1, "col": 2, "var": "k", "val": "(-((1-alpha)*A*T68))"}
+, {"eq": 1, "col": 3, "var": "w", "val": "1"}
+, {"eq": 1, "col": 5, "var": "A", "val": "(-((1-alpha)*T15))"}
+, {"eq": 2, "col": 2, "var": "k", "val": "(-(alpha*A*T71))"}
+, {"eq": 2, "col": 4, "var": "r", "val": "1"}
+, {"eq": 2, "col": 5, "var": "A", "val": "(-(alpha*T21))"}
+, {"eq": 3, "col": 1, "var": "c", "val": "1/k"}
+, {"eq": 3, "col": 2, "var": "k", "val": "(-(A*T71-(-c)/(k*k)))"}
+, {"eq": 3, "col": 5, "var": "A", "val": "(-T21)"}
+, {"eq": 4, "col": 2, "var": "k", "val": "(-(beta*alpha*A*T71*T81))"}
+, {"eq": 4, "col": 5, "var": "A", "val": "(-(T81*beta*alpha*T21))"}
+, {"eq": 4, "col": 7, "var": "beta", "val": "(-((1+alpha*A*T21-delta)*T81))"}
+, {"eq": 5, "col": 2, "var": "k", "val": "(-(A*T68))"}
+, {"eq": 5, "col": 5, "var": "A", "val": "(-T15)"}
+, {"eq": 5, "col": 6, "var": "y", "val": "1"}
+, {"eq": 6, "col": 5, "var": "A", "val": "1/A-rho*1/A"}
+, {"eq": 7, "col": 7, "var": "beta", "val": "1/beta-rho_beta*1/beta"}
+]}, "external_functions_temporary_terms_hessian": [], "temporary_terms_hessian": [], "hessian": {  "nrows": 7, "ncols": 49, "entries": []}, "external_functions_temporary_terms_third_derivative": [], "temporary_terms_third_derivative": [], "third_derivative": {  "nrows": 7, "ncols": 343, "entries": []}}}
