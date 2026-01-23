@@ -1,0 +1,62 @@
+{"dynamic_model": {"model_local_variables": [], "external_functions_temporary_terms_": [], "temporary_terms_": [], 
+"residuals":[
+{"residual": {"lhs": "pi", "rhs": "beta*pi(1)+kappa*y_gap"}}
+, {"residual": {"lhs": "y_gap", "rhs": "y_gap(1)-1/sigma*(i-pi(1)-r_nat)"}}
+, {"residual": {"lhs": "i", "rhs": "pi*phi_pi+y_gap*phi_y+nu"}}
+, {"residual": {"lhs": "r_nat", "rhs": "(-sigma)*psi_n_ya*(1-rho_a)*a"}}
+, {"residual": {"lhs": "r_real", "rhs": "i-pi(1)"}}
+, {"residual": {"lhs": "y_nat", "rhs": "psi_n_ya*a"}}
+, {"residual": {"lhs": "y_gap", "rhs": "y-y_nat"}}
+, {"residual": {"lhs": "y", "rhs": "a+n"}}
+, {"residual": {"lhs": "w-p", "rhs": "sigma*c+n*varphi"}}
+, {"residual": {"lhs": "y", "rhs": "c"}}
+, {"residual": {"lhs": "p", "rhs": "pi+p(-1)"}}
+, {"residual": {"lhs": "m_real", "rhs": "y-i*eta_m"}}
+, {"residual": {"lhs": "a", "rhs": "rho_a*a(-1)+eps_a"}}
+, {"residual": {"lhs": "nu", "rhs": "rho_nu*nu(-1)+eps_nu"}}
+
+]
+, "external_functions_temporary_terms_jacobian": [], "temporary_terms_jacobian": [], "jacobian": {  "nrows": 14, "ncols": 21, "entries": [{"eq": 1, "col": 4, "var": "pi", "shift": 0, "val": "1"}
+, {"eq": 1, "col": 18, "var": "pi", "shift": 1, "val": "(-beta)"}
+, {"eq": 1, "col": 5, "var": "y_gap", "shift": 0, "val": "(-kappa)"}
+, {"eq": 2, "col": 18, "var": "pi", "shift": 1, "val": "(-(1/sigma))"}
+, {"eq": 2, "col": 5, "var": "y_gap", "shift": 0, "val": "1"}
+, {"eq": 2, "col": 19, "var": "y_gap", "shift": 1, "val": "(-1)"}
+, {"eq": 2, "col": 8, "var": "r_nat", "shift": 0, "val": "(-(1/sigma))"}
+, {"eq": 2, "col": 10, "var": "i", "shift": 0, "val": "1/sigma"}
+, {"eq": 3, "col": 4, "var": "pi", "shift": 0, "val": "(-phi_pi)"}
+, {"eq": 3, "col": 5, "var": "y_gap", "shift": 0, "val": "(-phi_y)"}
+, {"eq": 3, "col": 10, "var": "i", "shift": 0, "val": "1"}
+, {"eq": 3, "col": 13, "var": "nu", "shift": 0, "val": "(-1)"}
+, {"eq": 4, "col": 8, "var": "r_nat", "shift": 0, "val": "1"}
+, {"eq": 4, "col": 14, "var": "a", "shift": 0, "val": "(-((-sigma)*psi_n_ya*(1-rho_a)))"}
+, {"eq": 5, "col": 18, "var": "pi", "shift": 1, "val": "1"}
+, {"eq": 5, "col": 9, "var": "r_real", "shift": 0, "val": "1"}
+, {"eq": 5, "col": 10, "var": "i", "shift": 0, "val": "(-1)"}
+, {"eq": 6, "col": 6, "var": "y_nat", "shift": 0, "val": "1"}
+, {"eq": 6, "col": 14, "var": "a", "shift": 0, "val": "(-psi_n_ya)"}
+, {"eq": 7, "col": 5, "var": "y_gap", "shift": 0, "val": "1"}
+, {"eq": 7, "col": 6, "var": "y_nat", "shift": 0, "val": "1"}
+, {"eq": 7, "col": 7, "var": "y", "shift": 0, "val": "(-1)"}
+, {"eq": 8, "col": 7, "var": "y", "shift": 0, "val": "1"}
+, {"eq": 8, "col": 11, "var": "n", "shift": 0, "val": "(-1)"}
+, {"eq": 8, "col": 14, "var": "a", "shift": 0, "val": "(-1)"}
+, {"eq": 9, "col": 11, "var": "n", "shift": 0, "val": "(-varphi)"}
+, {"eq": 9, "col": 15, "var": "p", "shift": 0, "val": "(-1)"}
+, {"eq": 9, "col": 16, "var": "w", "shift": 0, "val": "1"}
+, {"eq": 9, "col": 17, "var": "c", "shift": 0, "val": "(-sigma)"}
+, {"eq": 10, "col": 7, "var": "y", "shift": 0, "val": "1"}
+, {"eq": 10, "col": 17, "var": "c", "shift": 0, "val": "(-1)"}
+, {"eq": 11, "col": 4, "var": "pi", "shift": 0, "val": "(-1)"}
+, {"eq": 11, "col": 3, "var": "p", "shift": -1, "val": "(-1)"}
+, {"eq": 11, "col": 15, "var": "p", "shift": 0, "val": "1"}
+, {"eq": 12, "col": 7, "var": "y", "shift": 0, "val": "(-1)"}
+, {"eq": 12, "col": 10, "var": "i", "shift": 0, "val": "eta_m"}
+, {"eq": 12, "col": 12, "var": "m_real", "shift": 0, "val": "1"}
+, {"eq": 13, "col": 2, "var": "a", "shift": -1, "val": "(-rho_a)"}
+, {"eq": 13, "col": 14, "var": "a", "shift": 0, "val": "1"}
+, {"eq": 13, "col": 20, "var": "eps_a", "shift": 0, "val": "(-1)"}
+, {"eq": 14, "col": 1, "var": "nu", "shift": -1, "val": "(-rho_nu)"}
+, {"eq": 14, "col": 13, "var": "nu", "shift": 0, "val": "1"}
+, {"eq": 14, "col": 21, "var": "eps_nu", "shift": 0, "val": "(-1)"}
+]}, "external_functions_temporary_terms_hessian": [], "temporary_terms_hessian": [], "hessian": {  "nrows": 14, "ncols": 441, "entries": []}, "external_functions_temporary_terms_third_derivative": [], "temporary_terms_third_derivative": [], "third_derivative": {  "nrows": 14, "ncols": 9261, "entries": []}}}

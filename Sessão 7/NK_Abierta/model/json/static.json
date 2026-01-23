@@ -1,0 +1,79 @@
+{"static_model": {"model_local_variables": [], "external_functions_temporary_terms_": [], "temporary_terms_": [], 
+"residuals":[
+{"residual": {"lhs": "pi_h", "rhs": "pi_h*beta+kappa_gamma*y_gap"}}
+, {"residual": {"lhs": "y_gap", "rhs": "y_gap-1/sigma_gamma*(i-pi_h-r_nat)"}}
+, {"residual": {"lhs": "i", "rhs": "pi_h*phi_pi+y_gap*phi_y+nu"}}
+, {"residual": {"lhs": "r_nat", "rhs": "(-sigma_gamma)*Gamma*(1-rho_a)*a"}}
+, {"residual": {"lhs": "r_real", "rhs": "i-pi_h"}}
+, {"residual": {"lhs": "y_nat", "rhs": "Gamma*a+y_star*Psi"}}
+, {"residual": {"lhs": "y_gap", "rhs": "y-y_nat"}}
+, {"residual": {"lhs": "y", "rhs": "a+n"}}
+, {"residual": {"lhs": "w-p", "rhs": "sigma*c+n*varphi"}}
+, {"residual": {"lhs": "s", "rhs": "sigma_gamma*(y-y_star)"}}
+, {"residual": {"lhs": "nx", "rhs": "s*gamma*(omega/sigma-1)"}}
+, {"residual": {"lhs": "y", "rhs": "c+nx+s*gamma"}}
+, {"residual": {"lhs": "pi", "rhs": "pi_h"}}
+, {"residual": {"lhs": "p_h", "rhs": "pi_h+p_h"}}
+, {"residual": {"lhs": "p", "rhs": "p+pi"}}
+, {"residual": {"lhs": "s", "rhs": "er+p_star-p_h"}}
+, {"residual": {"lhs": "d_er", "rhs": "0"}}
+, {"residual": {"lhs": "m_real", "rhs": "y-i*eta_m"}}
+, {"residual": {"lhs": "a", "rhs": "rho_a*a+eps_a"}}
+, {"residual": {"lhs": "nu", "rhs": "nu*rho_nu+eps_nu"}}
+, {"residual": {"lhs": "y_star", "rhs": "y_star*rho_y_star+eps_y_star"}}
+, {"residual": {"lhs": "p_star", "rhs": "p_star*rho_p_star+eps_p_star"}}
+
+]
+, "external_functions_temporary_terms_jacobian": [], "temporary_terms_jacobian": [], "jacobian": {  "nrows": 22, "ncols": 22, "entries": [{"eq": 1, "col": 1, "var": "y_gap", "val": "(-kappa_gamma)"}
+, {"eq": 1, "col": 2, "var": "pi_h", "val": "1-beta"}
+, {"eq": 2, "col": 2, "var": "pi_h", "val": "(-(1/sigma_gamma))"}
+, {"eq": 2, "col": 3, "var": "i", "val": "1/sigma_gamma"}
+, {"eq": 2, "col": 5, "var": "r_nat", "val": "(-(1/sigma_gamma))"}
+, {"eq": 3, "col": 1, "var": "y_gap", "val": "(-phi_y)"}
+, {"eq": 3, "col": 2, "var": "pi_h", "val": "(-phi_pi)"}
+, {"eq": 3, "col": 3, "var": "i", "val": "1"}
+, {"eq": 3, "col": 22, "var": "nu", "val": "(-1)"}
+, {"eq": 4, "col": 5, "var": "r_nat", "val": "1"}
+, {"eq": 4, "col": 21, "var": "a", "val": "(-((-sigma_gamma)*Gamma*(1-rho_a)))"}
+, {"eq": 5, "col": 2, "var": "pi_h", "val": "1"}
+, {"eq": 5, "col": 3, "var": "i", "val": "(-1)"}
+, {"eq": 5, "col": 11, "var": "r_real", "val": "1"}
+, {"eq": 6, "col": 4, "var": "y_nat", "val": "1"}
+, {"eq": 6, "col": 19, "var": "y_star", "val": "(-Psi)"}
+, {"eq": 6, "col": 21, "var": "a", "val": "(-Gamma)"}
+, {"eq": 7, "col": 1, "var": "y_gap", "val": "1"}
+, {"eq": 7, "col": 4, "var": "y_nat", "val": "1"}
+, {"eq": 7, "col": 6, "var": "y", "val": "(-1)"}
+, {"eq": 8, "col": 6, "var": "y", "val": "1"}
+, {"eq": 8, "col": 9, "var": "n", "val": "(-1)"}
+, {"eq": 8, "col": 21, "var": "a", "val": "(-1)"}
+, {"eq": 9, "col": 9, "var": "n", "val": "(-varphi)"}
+, {"eq": 9, "col": 12, "var": "w", "val": "1"}
+, {"eq": 9, "col": 14, "var": "c", "val": "(-sigma)"}
+, {"eq": 9, "col": 16, "var": "p", "val": "(-1)"}
+, {"eq": 10, "col": 6, "var": "y", "val": "(-sigma_gamma)"}
+, {"eq": 10, "col": 7, "var": "s", "val": "1"}
+, {"eq": 10, "col": 19, "var": "y_star", "val": "sigma_gamma"}
+, {"eq": 11, "col": 7, "var": "s", "val": "(-(gamma*(omega/sigma-1)))"}
+, {"eq": 11, "col": 13, "var": "nx", "val": "1"}
+, {"eq": 12, "col": 6, "var": "y", "val": "1"}
+, {"eq": 12, "col": 7, "var": "s", "val": "(-gamma)"}
+, {"eq": 12, "col": 13, "var": "nx", "val": "(-1)"}
+, {"eq": 12, "col": 14, "var": "c", "val": "(-1)"}
+, {"eq": 13, "col": 2, "var": "pi_h", "val": "(-1)"}
+, {"eq": 13, "col": 8, "var": "pi", "val": "1"}
+, {"eq": 14, "col": 2, "var": "pi_h", "val": "(-1)"}
+, {"eq": 15, "col": 8, "var": "pi", "val": "(-1)"}
+, {"eq": 16, "col": 7, "var": "s", "val": "1"}
+, {"eq": 16, "col": 15, "var": "p_h", "val": "1"}
+, {"eq": 16, "col": 17, "var": "er", "val": "(-1)"}
+, {"eq": 16, "col": 20, "var": "p_star", "val": "(-1)"}
+, {"eq": 17, "col": 18, "var": "d_er", "val": "1"}
+, {"eq": 18, "col": 3, "var": "i", "val": "eta_m"}
+, {"eq": 18, "col": 6, "var": "y", "val": "(-1)"}
+, {"eq": 18, "col": 10, "var": "m_real", "val": "1"}
+, {"eq": 19, "col": 21, "var": "a", "val": "1-rho_a"}
+, {"eq": 20, "col": 22, "var": "nu", "val": "1-rho_nu"}
+, {"eq": 21, "col": 19, "var": "y_star", "val": "1-rho_y_star"}
+, {"eq": 22, "col": 20, "var": "p_star", "val": "1-rho_p_star"}
+]}, "external_functions_temporary_terms_hessian": [], "temporary_terms_hessian": [], "hessian": {  "nrows": 22, "ncols": 484, "entries": []}, "external_functions_temporary_terms_third_derivative": [], "temporary_terms_third_derivative": [], "third_derivative": {  "nrows": 22, "ncols": 10648, "entries": []}}}

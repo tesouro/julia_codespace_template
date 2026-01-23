@@ -1,0 +1,75 @@
+Dynare version: 0.9.18
+2026-01-23T18:51:37.908: Starting @dynare NK_Abierta.mod
+["NK_Abierta.mod", "language=julia", "json=compute"]
+Dynare preprocessor version: 6.4.0+0
+2026-01-23T18:51:37.919: End of preprocessing
+2026-01-23T18:51:37.924: Start parse_statements!
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:44
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:12
+Exception while generating log record in module Dynare at /home/vscode/.julia/packages/Dynare/AZQL4/src/dynare_table.jl:31
+2026-01-23T18:51:39.727: End parse_statements!
+2026-01-23T18:51:39.728: End parser
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found
+No strict ticks found

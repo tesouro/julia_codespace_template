@@ -1,0 +1,165 @@
+{
+"endogenous": [{"name":"y_gap", "texName":"y\\_gap", "longName":"y_gap"}
+, {"name":"pi_h", "texName":"pi\\_h", "longName":"pi_h"}
+, {"name":"i", "texName":"i", "longName":"i"}
+, {"name":"y_nat", "texName":"y\\_nat", "longName":"y_nat"}
+, {"name":"r_nat", "texName":"r\\_nat", "longName":"r_nat"}
+, {"name":"y", "texName":"y", "longName":"y"}
+, {"name":"s", "texName":"s", "longName":"s"}
+, {"name":"pi", "texName":"pi", "longName":"pi"}
+, {"name":"n", "texName":"n", "longName":"n"}
+, {"name":"m_real", "texName":"m\\_real", "longName":"m_real"}
+, {"name":"r_real", "texName":"r\\_real", "longName":"r_real"}
+, {"name":"w", "texName":"w", "longName":"w"}
+, {"name":"nx", "texName":"nx", "longName":"nx"}
+, {"name":"c", "texName":"c", "longName":"c"}
+, {"name":"p_h", "texName":"p\\_h", "longName":"p_h"}
+, {"name":"p", "texName":"p", "longName":"p"}
+, {"name":"er", "texName":"er", "longName":"er"}
+, {"name":"d_er", "texName":"d\\_er", "longName":"d_er"}
+, {"name":"y_star", "texName":"y\\_star", "longName":"y_star"}
+, {"name":"p_star", "texName":"p\\_star", "longName":"p_star"}
+, {"name":"a", "texName":"a", "longName":"a"}
+, {"name":"nu", "texName":"nu", "longName":"nu"}
+]
+, "exogenous":[{"name":"eps_nu", "texName":"eps\\_nu", "longName":"eps_nu"}
+, {"name":"eps_a", "texName":"eps\\_a", "longName":"eps_a"}
+, {"name":"eps_y_star", "texName":"eps\\_y\\_star", "longName":"eps_y_star"}
+, {"name":"eps_p_star", "texName":"eps\\_p\\_star", "longName":"eps_p_star"}
+]
+, "exogenous_deterministic": []
+, "parameters": [{"name":"beta", "texName":"beta", "longName":"beta"}
+, {"name":"sigma", "texName":"sigma", "longName":"sigma"}
+, {"name":"varphi", "texName":"varphi", "longName":"varphi"}
+, {"name":"epsilon", "texName":"epsilon", "longName":"epsilon"}
+, {"name":"theta", "texName":"theta", "longName":"theta"}
+, {"name":"gamma", "texName":"gamma", "longName":"gamma"}
+, {"name":"eta", "texName":"eta", "longName":"eta"}
+, {"name":"eta_m", "texName":"eta\\_m", "longName":"eta_m"}
+, {"name":"rho_a", "texName":"rho\\_a", "longName":"rho_a"}
+, {"name":"rho_nu", "texName":"rho\\_nu", "longName":"rho_nu"}
+, {"name":"rho_y_star", "texName":"rho\\_y\\_star", "longName":"rho_y_star"}
+, {"name":"rho_p_star", "texName":"rho\\_p\\_star", "longName":"rho_p_star"}
+, {"name":"phi_pi", "texName":"phi\\_pi", "longName":"phi_pi"}
+, {"name":"phi_y", "texName":"phi\\_y", "longName":"phi_y"}
+, {"name":"omega", "texName":"omega", "longName":"omega"}
+, {"name":"sigma_gamma", "texName":"sigma\\_gamma", "longName":"sigma_gamma"}
+, {"name":"Gamma", "texName":"Gamma", "longName":"Gamma"}
+, {"name":"Psi", "texName":"Psi", "longName":"Psi"}
+, {"name":"kappa_gamma", "texName":"kappa\\_gamma", "longName":"kappa_gamma"}
+, {"name":"Phi_star", "texName":"Phi\\_star", "longName":"Phi_star"}
+]
+, "orig_endo_nbr": 22
+, "aux_vars": [], "model_local_variables": [], 
+"model":[
+{"lhs": "pi_h", "rhs": "beta*pi_h(1)+kappa_gamma*y_gap", "line": 55, "tags": {"name": "Curva de Phillips Novo-Keynesiana"}}
+, {"lhs": "y_gap", "rhs": "y_gap(1)-1/sigma_gamma*(i-pi_h(1)-r_nat)", "line": 58, "tags": {"name": "Curva IS dinâmica"}}
+, {"lhs": "i", "rhs": "pi_h*phi_pi+y_gap*phi_y+nu", "line": 61, "tags": {"name": "Regra de Taylor"}}
+, {"lhs": "r_nat", "rhs": "(-sigma_gamma)*Gamma*(1-rho_a)*a+Phi_star*(y_star(1)-y_star)", "line": 64, "tags": {"name": "Taxa de juros natural"}}
+, {"lhs": "r_real", "rhs": "i-pi_h(1)", "line": 67, "tags": {"name": "Taxa de juros real"}}
+, {"lhs": "y_nat", "rhs": "Gamma*a+y_star*Psi", "line": 70, "tags": {"name": "Produto natural"}}
+, {"lhs": "y_gap", "rhs": "y-y_nat", "line": 73, "tags": {"name": "Hiato do produto"}}
+, {"lhs": "y", "rhs": "a+n", "line": 76, "tags": {"name": "Função de produção"}}
+, {"lhs": "w-p", "rhs": "sigma*c+n*varphi", "line": 79, "tags": {"name": "Oferta de trabalho"}}
+, {"lhs": "s", "rhs": "sigma_gamma*(y-y_star)", "line": 82, "tags": {"name": "Termos de troca"}}
+, {"lhs": "nx", "rhs": "s*gamma*(omega/sigma-1)", "line": 85, "tags": {"name": "Balança comercial"}}
+, {"lhs": "y", "rhs": "c+nx+s*gamma", "line": 88, "tags": {"name": "Restrição de recursos"}}
+, {"lhs": "pi", "rhs": "pi_h+gamma*(s-s(-1))", "line": 91, "tags": {"name": "Inflação da cesta de consumo"}}
+, {"lhs": "p_h", "rhs": "pi_h+p_h(-1)", "line": 94, "tags": {"name": "Nível de preços domésticos"}}
+, {"lhs": "p", "rhs": "pi+p(-1)", "line": 97, "tags": {"name": "Índice de Preços ao Consumidor"}}
+, {"lhs": "s", "rhs": "er+p_star-p_h", "line": 100, "tags": {"name": "Taxa de câmbio nominal"}}
+, {"lhs": "d_er", "rhs": "er-er(-1)", "line": 103, "tags": {"name": "Crescimento da taxa de câmbio"}}
+, {"lhs": "m_real", "rhs": "y-i*eta_m", "line": 106, "tags": {"name": "Demanda por encaixes reais"}}
+, {"lhs": "a", "rhs": "rho_a*a(-1)+eps_a", "line": 109, "tags": {"name": "Choque de produtividade"}}
+, {"lhs": "nu", "rhs": "rho_nu*nu(-1)+eps_nu", "line": 112, "tags": {"name": "Choque de política monetária"}}
+, {"lhs": "y_star", "rhs": "rho_y_star*y_star(-1)+eps_y_star", "line": 115, "tags": {"name": "Choque de demanda externa"}}
+, {"lhs": "p_star", "rhs": "rho_p_star*p_star(-1)+eps_p_star", "line": 118, "tags": {"name": "Choque de preço externo"}}
+
+]
+, "xrefs": {"parameters": [], "endogenous": [], "exogenous": [], "exogenous_deterministic": []}
+, "abstract_syntax_tree":[
+{ "number":0, "line":55, "tags": {"name": "Curva de Phillips Novo-Keynesiana"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "beta", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 1}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "kappa_gamma", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y_gap", "type" : "endogenous", "lag" : 0}}}}}, { "number":1, "line":58, "tags": {"name": "Curva IS dinâmica"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y_gap", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "y_gap", "type" : "endogenous", "lag" : 1}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "sigma_gamma", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "i", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 1}}, "arg2" : {"node_type" : "VariableNode", "name" : "r_nat", "type" : "endogenous", "lag" : 0}}}}}}, { "number":2, "line":61, "tags": {"name": "Regra de Taylor"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "i", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "phi_pi", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "y_gap", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "phi_y", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "nu", "type" : "endogenous", "lag" : 0}}}}, { "number":3, "line":64, "tags": {"name": "Taxa de juros natural"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "r_nat", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "UnaryOpNode", "op" : "uminus", "arg" : {"node_type" : "VariableNode", "name" : "sigma_gamma", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "Gamma", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "NumConstNode", "value" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "rho_a", "type" : "parameter", "lag" : 0}}}, "arg2" : {"node_type" : "VariableNode", "name" : "a", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "Phi_star", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "y_star", "type" : "endogenous", "lag" : 1}, "arg2" : {"node_type" : "VariableNode", "name" : "y_star", "type" : "endogenous", "lag" : 0}}}}}}, { "number":4, "line":67, "tags": {"name": "Taxa de juros real"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "r_real", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "i", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 1}}}}, { "number":5, "line":70, "tags": {"name": "Produto natural"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y_nat", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "Gamma", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "a", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "y_star", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "Psi", "type" : "parameter", "lag" : 0}}}}}, { "number":6, "line":73, "tags": {"name": "Hiato do produto"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y_gap", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y_nat", "type" : "endogenous", "lag" : 0}}}}, { "number":7, "line":76, "tags": {"name": "Função de produção"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "a", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "n", "type" : "endogenous", "lag" : 0}}}}, { "number":8, "line":79, "tags": {"name": "Oferta de trabalho"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "w", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "p", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "sigma", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "n", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "varphi", "type" : "parameter", "lag" : 0}}}}}, { "number":9, "line":82, "tags": {"name": "Termos de troca"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "s", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "sigma_gamma", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y_star", "type" : "endogenous", "lag" : 0}}}}}, { "number":10, "line":85, "tags": {"name": "Balança comercial"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "nx", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "s", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "gamma", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "BinaryOpNode", "op" : "/", "arg1" : {"node_type" : "VariableNode", "name" : "omega", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "sigma", "type" : "parameter", "lag" : 0}}, "arg2" : {"node_type" : "NumConstNode", "value" : 1}}}}}}, { "number":11, "line":88, "tags": {"name": "Restrição de recursos"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "c", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "nx", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "s", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "gamma", "type" : "parameter", "lag" : 0}}}}}, { "number":12, "line":91, "tags": {"name": "Inflação da cesta de consumo"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "pi", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "gamma", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "s", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "s", "type" : "endogenous", "lag" : -1}}}}}}, { "number":13, "line":94, "tags": {"name": "Nível de preços domésticos"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "p_h", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "pi_h", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "p_h", "type" : "endogenous", "lag" : -1}}}}, { "number":14, "line":97, "tags": {"name": "Índice de Preços ao Consumidor"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "p", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "pi", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "p", "type" : "endogenous", "lag" : -1}}}}, { "number":15, "line":100, "tags": {"name": "Taxa de câmbio nominal"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "s", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "VariableNode", "name" : "er", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "p_star", "type" : "endogenous", "lag" : 0}}, "arg2" : {"node_type" : "VariableNode", "name" : "p_h", "type" : "endogenous", "lag" : 0}}}}, { "number":16, "line":103, "tags": {"name": "Crescimento da taxa de câmbio"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "d_er", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "er", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "er", "type" : "endogenous", "lag" : -1}}}}, { "number":17, "line":106, "tags": {"name": "Demanda por encaixes reais"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "m_real", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "-", "arg1" : {"node_type" : "VariableNode", "name" : "y", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "i", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "eta_m", "type" : "parameter", "lag" : 0}}}}}, { "number":18, "line":109, "tags": {"name": "Choque de produtividade"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "a", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_a", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "a", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "VariableNode", "name" : "eps_a", "type" : "exogenous", "lag" : 0}}}}, { "number":19, "line":112, "tags": {"name": "Choque de política monetária"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "nu", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_nu", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "nu", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "VariableNode", "name" : "eps_nu", "type" : "exogenous", "lag" : 0}}}}, { "number":20, "line":115, "tags": {"name": "Choque de demanda externa"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "y_star", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_y_star", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "y_star", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "VariableNode", "name" : "eps_y_star", "type" : "exogenous", "lag" : 0}}}}, { "number":21, "line":118, "tags": {"name": "Choque de preço externo"}, "AST": {"node_type" : "BinaryOpNode", "op" : "=", "arg1" : {"node_type" : "VariableNode", "name" : "p_star", "type" : "endogenous", "lag" : 0}, "arg2" : {"node_type" : "BinaryOpNode", "op" : "+", "arg1" : {"node_type" : "BinaryOpNode", "op" : "*", "arg1" : {"node_type" : "VariableNode", "name" : "rho_p_star", "type" : "parameter", "lag" : 0}, "arg2" : {"node_type" : "VariableNode", "name" : "p_star", "type" : "endogenous", "lag" : -1}}, "arg2" : {"node_type" : "VariableNode", "name" : "eps_p_star", "type" : "exogenous", "lag" : 0}}}}], "variable_mapping":[
+{"name": "y_gap", "equations":["Curva de Phillips Novo-Keynesiana", "Curva IS dinâmica", "Regra de Taylor", "Hiato do produto"]}
+, {"name": "pi_h", "equations":["Curva de Phillips Novo-Keynesiana", "Curva IS dinâmica", "Regra de Taylor", "Taxa de juros real", "Inflação da cesta de consumo", "Nível de preços domésticos"]}
+, {"name": "i", "equations":["Curva IS dinâmica", "Regra de Taylor", "Taxa de juros real", "Demanda por encaixes reais"]}
+, {"name": "y_nat", "equations":["Produto natural", "Hiato do produto"]}
+, {"name": "r_nat", "equations":["Curva IS dinâmica", "Taxa de juros natural"]}
+, {"name": "y", "equations":["Hiato do produto", "Função de produção", "Termos de troca", "Restrição de recursos", "Demanda por encaixes reais"]}
+, {"name": "s", "equations":["Termos de troca", "Balança comercial", "Restrição de recursos", "Inflação da cesta de consumo", "Taxa de câmbio nominal"]}
+, {"name": "pi", "equations":["Inflação da cesta de consumo", "Índice de Preços ao Consumidor"]}
+, {"name": "n", "equations":["Função de produção", "Oferta de trabalho"]}
+, {"name": "m_real", "equations":["Demanda por encaixes reais"]}
+, {"name": "r_real", "equations":["Taxa de juros real"]}
+, {"name": "w", "equations":["Oferta de trabalho"]}
+, {"name": "nx", "equations":["Balança comercial", "Restrição de recursos"]}
+, {"name": "c", "equations":["Oferta de trabalho", "Restrição de recursos"]}
+, {"name": "p_h", "equations":["Nível de preços domésticos", "Taxa de câmbio nominal"]}
+, {"name": "p", "equations":["Oferta de trabalho", "Índice de Preços ao Consumidor"]}
+, {"name": "er", "equations":["Taxa de câmbio nominal", "Crescimento da taxa de câmbio"]}
+, {"name": "d_er", "equations":["Crescimento da taxa de câmbio"]}
+, {"name": "y_star", "equations":["Taxa de juros natural", "Produto natural", "Termos de troca", "Choque de demanda externa"]}
+, {"name": "p_star", "equations":["Taxa de câmbio nominal", "Choque de preço externo"]}
+, {"name": "a", "equations":["Taxa de juros natural", "Produto natural", "Função de produção", "Choque de produtividade"]}
+, {"name": "nu", "equations":["Regra de Taylor", "Choque de política monetária"]}
+, {"name": "eps_nu", "equations":["Choque de política monetária"]}
+, {"name": "eps_a", "equations":["Choque de produtividade"]}
+, {"name": "eps_y_star", "equations":["Choque de demanda externa"]}
+, {"name": "eps_p_star", "equations":["Choque de preço externo"]}
+], "dynamic_tmp_nbr": [0, 0, 0, 0], "dynamic_g1_sparse_rowval": [13, 14, 15, 17, 21, 22, 19, 20, 1, 2, 3, 7, 1, 3, 13, 14, 2, 3, 5, 18, 6, 7, 2, 4, 7, 8, 10, 12, 18, 10, 11, 12, 13, 16, 13, 15, 8, 9, 18, 5, 9, 11, 12, 9, 12, 14, 16, 9, 15, 16, 17, 17, 4, 6, 10, 21, 16, 22, 4, 6, 8, 19, 3, 20, 2, 1, 2, 5, 4, 20, 19, 21, 22], 
+"dynamic_g1_sparse_colval": [7, 15, 16, 17, 19, 20, 21, 22, 23, 23, 23, 23, 24, 24, 24, 24, 25, 25, 25, 25, 26, 26, 27, 27, 28, 28, 28, 28, 28, 29, 29, 29, 29, 29, 30, 30, 31, 31, 32, 33, 34, 35, 35, 36, 36, 37, 37, 38, 38, 39, 39, 40, 41, 41, 41, 41, 42, 42, 43, 43, 43, 43, 44, 44, 45, 46, 46, 46, 63, 67, 68, 69, 70], 
+"dynamic_g1_sparse_colptr": [1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 13, 17, 21, 23, 25, 30, 35, 37, 39, 40, 41, 42, 44, 46, 48, 50, 52, 53, 57, 59, 63, 65, 66, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 69, 70, 70, 70, 70, 71, 72, 73, 74]
+, "dynamic_g2_sparse_indices": []
+, "static_tmp_nbr": [0, 0, 0, 0], "static_g1_sparse_rowval": [1, 3, 7, 1, 2, 3, 5, 13, 14, 2, 3, 5, 18, 6, 7, 2, 4, 7, 8, 10, 12, 18, 10, 11, 12, 16, 13, 15, 8, 9, 18, 5, 9, 11, 12, 9, 12, 16, 9, 16, 17, 6, 10, 21, 16, 22, 4, 6, 8, 19, 3, 20], 
+"static_g1_sparse_colval": [1, 1, 1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 5, 5, 6, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 9, 9, 10, 11, 12, 13, 13, 14, 14, 15, 16, 17, 18, 19, 19, 19, 20, 20, 21, 21, 21, 21, 22, 22], 
+"static_g1_sparse_colptr": [1, 4, 10, 14, 16, 18, 23, 27, 29, 31, 32, 33, 34, 36, 38, 39, 40, 41, 42, 45, 47, 51, 53]
+, "statements": [{"statementName": "param_init", "name": "beta", "value": "0.99"}, 
+{"statementName": "param_init", "name": "sigma", "value": "1"}, 
+{"statementName": "param_init", "name": "varphi", "value": "1"}, 
+{"statementName": "param_init", "name": "epsilon", "value": "9"}, 
+{"statementName": "param_init", "name": "theta", "value": "0.75"}, 
+{"statementName": "param_init", "name": "rho_nu", "value": "0.5"}, 
+{"statementName": "param_init", "name": "rho_a", "value": "0.9"}, 
+{"statementName": "param_init", "name": "phi_pi", "value": "1.5"}, 
+{"statementName": "param_init", "name": "phi_y", "value": "0.125"}, 
+{"statementName": "param_init", "name": "eta_m", "value": "3.77"}, 
+{"statementName": "param_init", "name": "eta", "value": "1"}, 
+{"statementName": "param_init", "name": "gamma", "value": "0.4"}, 
+{"statementName": "param_init", "name": "rho_y_star", "value": "0.5"}, 
+{"statementName": "param_init", "name": "rho_p_star", "value": "0.5"}, 
+{"statementName": "param_init", "name": "omega", "value": "sigma*eta+(1-gamma)*(sigma*eta-1)"}, 
+{"statementName": "param_init", "name": "sigma_gamma", "value": "sigma/(1+gamma*(omega-1))"}, 
+{"statementName": "param_init", "name": "Gamma", "value": "(1+varphi)/(varphi+sigma_gamma)"}, 
+{"statementName": "param_init", "name": "Psi", "value": "sigma_gamma*(omega-1)*(-gamma)/(varphi+sigma_gamma)"}, 
+{"statementName": "param_init", "name": "kappa_gamma", "value": "(varphi+sigma_gamma)*(1-theta)*(1-theta*beta)/theta"}, 
+{"statementName": "param_init", "name": "Phi_star", "value": "sigma_gamma*(gamma*(omega-1)+Psi)"}, 
+{"statementName": "steady"}, 
+{"statementName": "check"}, 
+{"statementName": "shocks", "overwrite": false, "variance": [], "stderr": [{"name": "eps_nu", "stderr": "0.01"}, {"name": "eps_a", "stderr": "0.01"}, {"name": "eps_y_star", "stderr": "0.01"}, {"name": "eps_p_star", "stderr": "0.01"}], "covariance": [], "correlation": []}, 
+{"statementName": "stoch_simul", "options": {"irf": 20, "order": 1}}]
+,"model_info": {"lead_lag_incidence": [[ 0, 9, 31],[ 0, 10, 32],[ 0, 11, 0],[ 0, 12, 0],[ 0, 13, 0],[ 0, 14, 0],[ 1, 15, 0],[ 0, 16, 0],[ 0, 17, 0],[ 0, 18, 0],[ 0, 19, 0],[ 0, 20, 0],[ 0, 21, 0],[ 0, 22, 0],[ 2, 23, 0],[ 3, 24, 0],[ 4, 25, 0],[ 0, 26, 0],[ 5, 27, 33],[ 6, 28, 0],[ 7, 29, 0],[ 8, 30, 0]], "nstatic": 12, 
+"nfwrd": 2, 
+"npred": 7, 
+"nboth": 1, 
+"nsfwrd": 3, 
+"nspred": 8, 
+"ndynamic": 10, 
+"maximum_endo_lag": 1, 
+"maximum_endo_lead": 1, 
+"maximum_exo_lag": 0, 
+"maximum_exo_lead": 0, 
+"maximum_exo_det_lag": 0, 
+"maximum_exo_det_lead": 0, 
+"maximum_lag": 1, 
+"maximum_lead": 1, 
+"orig_maximum_endo_lag": 1,
+"orig_maximum_endo_lead": 1,
+"orig_maximum_exo_lag": 0,
+"orig_maximum_exo_lead": 0,
+"orig_maximum_exo_det_lag": 0,
+"orig_maximum_exo_det_lead": 0,
+"orig_maximum_lag": 1,
+"orig_maximum_lead": 1,
+"orig_maximum_lag_with_diffs_expanded": 1,
+"NNZDerivatives": [73, 0, -1]}
+, "steady_state_model": false
+}
